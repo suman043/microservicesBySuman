@@ -1,6 +1,6 @@
 spring:
   application:
-    name: 05_Greet_Service
+    name: Greet-Service
   boot:
     admin:
       client:
@@ -8,6 +8,11 @@ spring:
 
 server:
   port: 9091
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 
 management:
   endpoints:
